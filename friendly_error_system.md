@@ -4,7 +4,7 @@
 
 The Friendly Error System (FES) aims to help new programmers by providing error messages in simple, friendly language. It supplements browser console error messages by adding an alternative description of the error and links to helpful references.
 
-The FES prints messages in the console window, as seen in the [p5.js Web Editor] (https://github.com/processing/p5.js-web-editor). The minified (p5.min.js) version omits the FES.
+The FES prints messages in the console window, as seen in the [p5.js Web Editor](https://github.com/processing/p5.js-web-editor). The minified (p5.min.js) version omits the FES.
 
 ## Writing Friendly Error Messages
 
@@ -16,7 +16,7 @@ The FES is a part of the p5.js' [internationalization](https://github.com/proces
 
 `translator()` is based on i18next and imported from `src/core/internationalization.js`. It generates messages by looking up data from a JSON translation file: `translations/{{detected locale code, default=en}}/translation.json`.
 
-For example, if the detected browser locale is Korean (language designator: ‘ko’), the translator() will read in translated messages from `translations/ko/translation.json`. The language designator can also include regional information, such as `es-PE` (Spanish from Peru).
+For example, if the detected browser locale is Korean (language designator: `ko`), the `translator()` will read in translated messages from `translations/ko/translation.json`. The language designator can also include regional information, such as `es-PE` (Spanish from Peru).
 
 ### Writing Style Guideline
 
