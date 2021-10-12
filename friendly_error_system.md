@@ -12,20 +12,20 @@ We welcome contributions from all over the world! 🌐
 
 The FES is a part of the p5.js' [internationalization](https://github.com/processing/p5.js/blob/main/contributor_docs/internationalization.md) effort. We generate all FES messages' content through [i18next](https://www.i18next.com/)-based `translator()` function. This dynamic error message generation is for all languages, including English - the default language of p5.js.
 
-#### Translation File Location
+### Translation File Location
 
 `translator()` is based on i18next and imported from `src/core/internationalization.js`. It generates messages by looking up data from a JSON translation file: `translations/{{detected locale code, default=en}}/translation.json`.
 
 For example, if the detected browser locale is Korean (language designator: ‘ko’), the translator() will read in translated messages from `translations/ko/translation.json`. The language designator can also include regional information, such as `es-PE` (Spanish from Peru).
 
-#### Writing Style Guideline
+### Writing Style Guideline
 
 [tone]
 [modularization]
 [tips]
 [link to the complete guideline and test case (Korean)]
 
-#### Adding Translation Files
+### Adding Translation Files
 
 Technical details of adding a new translation are described in the [internationalization doc] (https://github.com/processing/p5.js/blob/main/contributor_docs/internationalization.md).
 
