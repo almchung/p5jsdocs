@@ -82,7 +82,7 @@ The [internationalization doc](https://github.com/processing/p5.js/blob/main/con
 
 
 ## Understanding How FES Works
-In this section, we will give an overview of how FES generates and displays messages. For more detailed information on the FES functions, please see our [developer notes]().
+In this section, we will give an overview of how FES generates and displays messages. For more detailed information on the FES functions, please see our [FES Reference + Dev Notes](https://github.com/almchung/p5jsdocs/blob/main/fes_reference_dev_notes.md).
 
 #### Overview
 p5.js calls the FES from multiple locations for different situations, when:
