@@ -98,12 +98,12 @@ You can find the translation files used by the `translator()` inside:
 
 #### FES Message Generators
 These functions are responsible for catching errors and generating FES messages:
-* `_validateParameters()` checks a p5.js function’s input parameters based on inline documentations.
-* `_friendlyFileLoadError()` catches file loading errors.
-* `_fesErrorMontitor()` handles global errors.
+* [`_friendlyFileLoadError()`](https://github.com/almchung/p5jsdocs/blob/main/fes_reference_dev_notes.md#corefriendly_errorsfile_errorsfriendlyfileloaderror) catches file loading errors.
+* [`_validateParameters()`](https://github.com/almchung/p5jsdocs/blob/main/fes_reference_dev_notes.md#corefriendly_errorsvalidate_paramsvalidateparameters) checks a p5.js function’s input parameters based on inline documentations.
+* [`_fesErrorMontitor()`](https://github.com/almchung/p5jsdocs/blob/main/fes_reference_dev_notes.md#corefriendly_errorsfes_corefeserrormonitor) handles global errors.
 * `helpForMisusedAtTopLevelCode()` is called on window load to check for use of p5.js functions outside of setup() or draw().
-* `fesCodeReader()`checks if a p5.js reserved constant or function is redefined by the user.
-* `checkForUserDefinedFunctions()`: checks if any user defined function has been used with a capitalization mistake.
+* [`fesCodeReader()`](https://github.com/almchung/p5jsdocs/blob/main/fes_reference_dev_notes.md#corefriendly_errorsfes_coresketch_readerfescodereader)checks if a p5.js reserved constant or function is redefined by the user.
+* [`checkForUserDefinedFunctions()`](https://github.com/almchung/p5jsdocs/blob/main/fes_reference_dev_notes.md#corefriendly_errorsfes_corecheckforuserdefinedfunctions): checks if any user defined function has been used with a capitalization mistake.
 
 #### FES Message Displayer
 `fes_core.js/_friendlyError()` prints generated friendly error messages in the console. For example:
