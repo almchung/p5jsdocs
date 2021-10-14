@@ -82,28 +82,13 @@ The [internationalization doc](https://github.com/processing/p5.js/blob/main/con
 
 
 ## Understanding How FES Works
+In this section, we will give an overview of how FES generates and displays messages. For more detailed information on the FES functions, please see our [developer notes]().
 
+#### Overview
 p5.js calls the FES from multiple locations for different situations, when:
 * The browser throws an error.
 * The user code calls a function from the p5 js API.
 * Other custom cases where the user would benefit from a help message.
-
-In this section, we will describe the main generators of the FES messages and their outputs.
-
-#### Turning Off the FES
-`p5.disableFriendlyErrors` allows you to turn off the FES when set to `true`.
-
-Example:
-```
-p5.disableFriendlyErrors = true;
-
-function setup() {
-  createCanvas(100, 50);
-}
-```
-
-There may be cases where you want to [disable the FES for performance](https://github.com/processing/p5.js/wiki/Optimizing-p5.js-Code-for-Performance#disable-the-friendly-error-system-fes).
-The single minified file of p5 (p5.min.js) automatically omits the FES.
 
 #### FES Code Location
 You can find the core components of the FES inside:
@@ -129,3 +114,19 @@ p5._friendlyError(
 );
 ```
 This function can be called anywhere in p5.
+
+## Turning Off the FES
+There may be cases where you want to [disable the FES for performance](https://github.com/processing/p5.js/wiki/Optimizing-p5.js-Code-for-Performance#disable-the-friendly-error-system-fes).
+
+`p5.disableFriendlyErrors` allows you to turn off the FES when set to `true`.
+
+Example:
+```
+p5.disableFriendlyErrors = true;
+
+function setup() {
+  createCanvas(100, 50);
+}
+```
+
+The single minified file of p5 (p5.min.js) automatically omits the FES.

@@ -1,4 +1,6 @@
-# FES Reference
+# FES Reference and Development Notes
+This document is the reference for p5.js's Friendly Error System (FES). It also contains development notes from the contributors.
+
 ### `core/friendly_errors/file_errors/friendlyFileLoadError()`:
 * This function generates and displays friendly error messages if a file fails to load correctly. It also checks if the size of a file might be too large to load and produces a warning.
 * This can be called through : `p5._friendlyFileLoadError(ERROR_TYPE, FILE_PATH)`.
